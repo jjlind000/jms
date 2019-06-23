@@ -4,6 +4,12 @@ import java.io.*;
 import javax.jms.*;
 import javax.naming.*;
 
+/*
+to execute on CL:
+cd C:\Users\J\Documents\Development\intellij\jms\
+java -cp jms_oreilly_book_ch2_1\target\classes;C:\Users\J\.m2\repository\javax\jms\javax.jms-api\2.0.1\javax.jms-api-2.0.1.jar;C:\Users\J\.m2\repository\org\apache\activemq\activemq-all\5.15.9\activemq-all-5.15.9.jar org.jmstutorial.Chat TopicCF topic1 Fred
+ */
+
 public class Chat implements javax.jms.MessageListener{
     private TopicSession pubSession;
     private TopicPublisher publisher;
